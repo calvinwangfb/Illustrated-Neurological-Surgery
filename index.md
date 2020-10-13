@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/calvinwangfb/Illustrated-Neurological-Surgery/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the  to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -40,22 +40,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 
-
-
-<ul>
-    {% for post in paginator.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
-
-<nav class="pagination" role="navigation">
-    {% if paginator.previous_page %}
-    <a class="previous pagination__newer btn btn-small btn-tertiary" href="{{ paginator.previous_page_path }}">&larr; 上一頁</a>
-    {% endif %}
-    <span class="page_num pagination__page-number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-    <a class="next pagination__older btn btn-small btn-tertiary" href="{{ paginator.next_page_path }}">下一頁 &rarr;</a>
-    {% endif %}
-</nav>
-
+[Editor on G](https://github.com/calvinwangfb/Illustrated-Neurological-Surgery/edit/gh-pages/index.md)
 
