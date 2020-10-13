@@ -35,3 +35,27 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+
+
+
+
+<ul>
+    {% for post in paginator.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<nav class="pagination" role="navigation">
+    {% if paginator.previous_page %}
+    <a class="previous pagination__newer btn btn-small btn-tertiary" href="{{ paginator.previous_page_path }}">&larr; 上一頁</a>
+    {% endif %}
+    <span class="page_num pagination__page-number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a class="next pagination__older btn btn-small btn-tertiary" href="{{ paginator.next_page_path }}">下一頁 &rarr;</a>
+    {% endif %}
+</nav>
+
+
